@@ -13,3 +13,14 @@ and paste the name into this command
 docker exec -i -t <container> /bin/bash
 ```
 
+## Python programming
+
+Get the current directory of the runnig script
+
+```
+print("CURRENT DIRECTOR : %s", str(Path(__file__).parent.absolute()))
+```
+Or the absolute path to the script itself
+```
+print("CURRENT DIRECTOR : %s", str(Path(__file__).absolute()))
+```
